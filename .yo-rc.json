@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.atwjsw"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "tasks",
+    "packageName": "org.atwjsw",
+    "packageFolder": "org/atwjsw",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ODUyOTg3NTU1YzNjMzlkYzZlOTZjNzBkMzg4NjM1OWM2NDJlN2NhZDQxY2Q1NGNiNWJhMTllMjI0MjA1NGExZWVjMWEzMTc2NmJlNDZkMWQ2YTg2MzliOTVjMGM3MjY1OGQ4MGFiZGY4YmFjMzZmOGZmZDc1OTk4OWZhZWNkZDc=",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
