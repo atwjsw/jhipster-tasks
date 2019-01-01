@@ -11,6 +11,7 @@ import { TaskDetailComponent } from './task-detail.component';
 import { TaskUpdateComponent } from './task-update.component';
 import { TaskDeletePopupComponent } from './task-delete-dialog.component';
 import { ITask } from 'app/shared/model/task.model';
+import { TasksComponent } from 'app/entities/customtask/tasks.component';
 
 @Injectable({ providedIn: 'root' })
 export class TaskResolve implements Resolve<ITask> {
@@ -32,6 +33,15 @@ export const taskRoute: Routes = [
     {
         path: 'task',
         component: TaskComponent,
+        data: {
+            authorities: ['ROLE_USER'],
+            pageTitle: 'Tasks'
+        },
+        canActivate: [UserRouteAccessService]
+    },
+    {
+        path: 'customtask',
+        component: TasksComponent,
         data: {
             authorities: ['ROLE_USER'],
             pageTitle: 'Tasks'

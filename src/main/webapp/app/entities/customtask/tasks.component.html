@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    Angular and Spring Boot Developer Tasks
+                </div>
+                <div class="card-body">
+                    <app-tasks-add (addTask)="addNewTask($event)"></app-tasks-add>
+                    <app-tasks-list [tasks]="tasks" (toggleCompleted)="toggleCompleted($event)"></app-tasks-list>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<!--<div class="table-responsive">-->
+    <!--<table class="table">-->
+        <!--<tbody>-->
+            <!--<tr *ngFor="let task of tasks">-->
+                <!--<td><input type="checkbox" [disabled]="task.completed" [checked]="task.completed" (change)="onCheck(task, $event)"></td>-->
+                <!--<td [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none'}">{{task.name}}</td>-->
+                <!--<td [ngStyle]="{'background-color': task.completed ? 'darkgreen' : 'blue'}" style="color: white">{{task.dueDate | date }}</td>-->
+                <!--&lt;!&ndash;<td>{{task.completed}}</td>&ndash;&gt;-->
+            <!--</tr>-->
+        <!--</tbody>-->
+    <!--</table>-->
+<!--</div>-->
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">
+        <input class="mr-2" type="checkbox"
+               [checked]="task.completed"
+               (change)="onCheck(task, $event)">
+        <span [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none'}">{{task.name}}</span>
+        <span class="badge float-right" [ngStyle]="{'background-color': task.completed ? 'darkgreen' : 'royalblue'}" style="color: white">{{task.dueDate | date: 'MM/dd/yyyy' }}</span>
+    </li>
+</ul>
